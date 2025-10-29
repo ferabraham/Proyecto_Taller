@@ -15,6 +15,14 @@
       "MOTOR": "ap",
       "CILINDRADA": "1,6 8v",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1695663237#gid=1695663237"
+    },
+    {
+      "DOMINIO": "ABC123",
+      "PROPIETARIO": "more",
+      "MARCA_MODELO": "corsa",
+      "MOTOR": "cdc",
+      "CILINDRADA": "1",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=461985044#gid=461985044"
     }
   ],
   "AAA124": [
@@ -41,6 +49,19 @@
       "REPUESTOS_REEMPLAZADOS": "aceite 15w40 castrol, filtro aceite y filtro nafta",
       "PROXIMO_SERVICE": "110000",
       "OBSERVACIONES": "Se recomienda cambio de cubiertas"
+    }
+  ],
+  "ABC123": [
+    {
+      "FECHA_INGRESO": "2025-02-11T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-02-12T03:00:00.000Z",
+      "KILOMETRAJE": "120",
+      "PROBLEMAS": "nada",
+      "DIAGNOSTICO": "muchos",
+      "URL_FOTOS": "N/D",
+      "REPUESTOS_REEMPLAZADOS": "todos",
+      "PROXIMO_SERVICE": "nunca",
+      "OBSERVACIONES": "nada"
     }
   ]
 }
