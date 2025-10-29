@@ -1,0 +1,123 @@
+/* =======================================
+   ESTILOS GENERALES Y LAYOUT
+   ======================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #004d99;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* --- Contenedores Principales --- */
+#login-container, #resultados-container {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#resultados-container {
+    text-align: left;
+}
+
+/* --- Estilos del Formulario --- */
+#patenteInput {
+    width: 80%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff9900; 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 80%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc7a00;
+}
+
+.error-message {
+    color: #cc0000;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* --- Estilos de la Tarjeta de Información Estática --- */
+.info-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+/* =======================================
+   ESTILOS DE LA TABLA DE HISTORIAL
+   ======================================= */
+.historial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.historial-table th, .historial-table td {
+    padding: 12px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.historial-table thead th {
+    background-color: #004d99;
+    color: white;
+    font-weight: bold;
+}
+
+/* Fila para resaltar el servicio más reciente */
+.historial-table tbody tr:first-child {
+    background-color: #e6f7ff; 
+    font-weight: bold;
+}
+
+/* Resaltado para alertas (Próximo Service) */
+.proximo-service {
+    background-color: #fff0f0 !important; 
+    font-weight: bold;
+    color: #CC0000;
+}
+
+/* Estilo del botón de 'Nueva Consulta' */
+#resultados-container button {
+    width: auto;
+    margin-top: 20px;
+    background-color: #6c757d;
+    padding: 10px 20px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Servicio - Taller Mecánico</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="login-container">
+        <h1>🛠️ Consulta de Historial</h1>
+        <p>Por favor, ingrese el dominio (patente) de su vehículo:</p>
+        
+        <form id="patenteForm">
+            <input 
+                type="text" 
+                id="patenteInput" 
+                placeholder="Ej: AAA123" 
+                required 
+                maxlength="10"
+                style="text-transform: uppercase;"
+            >
+            <button type="submit">Consultar</button>
+        </form>
+        
+        <p id="mensaje-error" class="error-message"></p>
+    </div>
+
+    
+    <div id="resultados-container" style="display: none;">
+        
+        <h2>Historial de Servicios para Patente: <span id="patente-mostrada"></span></h2>
+        
+        <div id="info-detalles" class="info-card"></div>
+        
+        <h3>Registro de Mantenimientos</h3>
+        <div id="historial-tabla"></div>
+
+        <hr>
+
+        <button onclick="window.location.reload();">Nueva Consulta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
