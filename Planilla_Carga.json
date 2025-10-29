@@ -23,6 +23,14 @@
       "MOTOR": "cdc",
       "CILINDRADA": "1",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=461985044#gid=461985044"
+    },
+    {
+      "DOMINIO": "NOO189",
+      "PROPIETARIO": "Mario",
+      "MARCA_MODELO": "citroen",
+      "MOTOR": "grande",
+      "CILINDRADA": "2",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1449702781#gid=1449702781"
     }
   ],
   "AAA124": [
@@ -62,6 +70,19 @@
       "REPUESTOS_REEMPLAZADOS": "todos",
       "PROXIMO_SERVICE": "nunca",
       "OBSERVACIONES": "nada"
+    }
+  ],
+  "NOO189": [
+    {
+      "FECHA_INGRESO": "2025-02-11T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-02-12T03:00:00.000Z",
+      "KILOMETRAJE": "120",
+      "PROBLEMAS": "nada",
+      "DIAGNOSTICO": "muchos",
+      "URL_FOTOS": "N/D",
+      "REPUESTOS_REEMPLAZADOS": "bombda de agua y aceite",
+      "PROXIMO_SERVICE": "nunca",
+      "OBSERVACIONES": "lo vamos a VENDER!!!"
     }
   ]
 }
