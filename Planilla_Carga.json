@@ -83,6 +83,17 @@
       "REPUESTOS_REEMPLAZADOS": "bombda de agua y aceite",
       "PROXIMO_SERVICE": "nunca",
       "OBSERVACIONES": "lo vamos a VENDER!!!"
+    },
+    {
+      "FECHA_INGRESO": "2025-02-15T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-03-15T03:00:00.000Z",
+      "KILOMETRAJE": "130",
+      "PROBLEMAS": "asda",
+      "DIAGNOSTICO": "sdas",
+      "URL_FOTOS": "asdas",
+      "REPUESTOS_REEMPLAZADOS": "sadas",
+      "PROXIMO_SERVICE": "asdas",
+      "OBSERVACIONES": "asdas"
     }
   ]
 }
