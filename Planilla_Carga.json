@@ -31,6 +31,13 @@
       "MOTOR": "grande",
       "CILINDRADA": "2",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1449702781#gid=1449702781"
+    },
+    {
+      "DOMINIO": "AC358SH",
+      "PROPIETARIO": "Gabriel Garcia",
+      "MARCA_MODELO": "Chevrolet Spin",
+      "MOTOR": "Corsa 2",
+      "CILINDRADA": "1,8 8v"
     }
   ],
   "AAA124": [
@@ -94,6 +101,18 @@
       "REPUESTOS_REEMPLAZADOS": "sadas",
       "PROXIMO_SERVICE": "asdas",
       "OBSERVACIONES": "asdas"
+    }
+  ],
+  "AC358SH": [
+    {
+      "FECHA_INGRESO": "2026-01-02T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-01-02T03:00:00.000Z",
+      "KILOMETRAJE": "182244",
+      "PROBLEMAS": "Service de Distribucion",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Distribucion completa, correa dentada, tensor, bomba de agua, termostato, agua y refrigerante",
+      "PROXIMO_SERVICE": "132,000 aproximadamente"
     }
   ]
 }
