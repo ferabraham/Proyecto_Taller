@@ -1,14 +1,11 @@
 /* =======================================
-   ESTILOS GENERALES Y LAYOUT
+   ESTILOS GENERALES Y LAYOUT (limpio)
    ======================================= */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5; 
+    background-color: #f0f2f5;
     margin: 0;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -19,105 +16,125 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* --- Contenedores Principales --- */
-#login-container, #resultados-container {
-    max-width: 900px;
-    width: 100%;
-    margin-top: 50px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* Layout de página: columnas laterales y contenido central */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 200px 1200px 200px;
+    gap: 18px;
+    align-items: start;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-#resultados-container {
-    text-align: left;
+/* En pantallas pequeñas usar solo una columna */
+@media (max-width: 999px) {
+    .layout-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Columnas laterales (son parte del flujo) --- */
+.side {
+    position: relative;
+    width: 100%;
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.side.left { grid-column: 1 / 2; }
+.side.right { grid-column: 3 / 4; }
+.side .hero-card { display: block; width: 320px; margin: 0; }
+.side .hero-card .hero img { height: 320px; object-fit: cover; }
+}
+
+/* Ajustes de espacio para evitar solapamiento con las barras laterales */
+@media (min-width: 1000px) {
+    body {
+        padding-left: 260px;
+        padding-right: 260px;
+    }
+}
+/* Layout de página: columnas laterales y contenido central */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 200px 1200px 200px;
+    gap: 18px;
+    align-items: start;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Ocultar laterales en pantallas pequeñas */
+@media (max-width: 999px) {
+    .side { display: none; }
+    #sides-gallery { display: none; }
+    body { padding-left: 20px; padding-right: 20px; }
+}
+
+/* --- Galería inferior (en flujo, debajo de la cuadrícula) --- */
+#bottom-gallery {
+    grid-column: 2 / 3; /* ahora solo en columna central */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* menos columnas para miniaturas más anchas */
+    gap: 18px;
+    align-items: start;
+    overflow: visible; /* sin carrusel */
+    padding: 14px;
+    background: rgba(0,0,0,0.02);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 6px 18px rgba(10,20,40,0.04);
+    z-index: 45;
+    margin-top: 16px;
+}
+
+#bottom-gallery .hero-card { width: 100%; padding: 8px; margin: 0; }
+#bottom-gallery .hero-card img { width: 100%; height: 420px; object-fit: cover; border-radius: 6px; }
+
+/* En pantallas pequeñas, la galería inferior pasa a flujo normal debajo del contenido */
+@media (max-width: 999px) {
+    #bottom-gallery { position: static; width: 100%; height: auto; display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 6px; margin-top: 18px; }
+    /* Cada tarjeta ocupa ~50% del ancho en móvil para miniaturas más anchas */
+    #bottom-gallery .hero-card { flex: 1 1 calc(50% - 12px); box-sizing: border-box; }
+    /* Imágenes responsivas en móvil: altura automática y límite razonable */
+    #bottom-gallery .hero-card img { width: 100%; height: auto; max-height: 240px; object-fit: cover; border-radius: 6px; }
+    /* Asegurar que el contenido central ocupe el ancho disponible con margenes */
+    #login-container, #resultados-container { max-width: 94%; margin-left: auto; margin-right: auto; }
+}
+
+/* --- Hero / imagen --- */
+.hero img { max-width: 220px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+
+/* --- Caption debajo de la imagen --- */
+.hero-caption { margin-top: 12px; text-align: center; color: #0b2b4a; background-color: rgba(0, 77, 153, 0.08); padding: 10px 14px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); width: fit-content; }
+.hero-caption .caption-title { font-weight: 800; font-size: 1.05em; color: #003366; margin-bottom: 4px; }
+.hero-caption .caption-address, .hero-caption .caption-phone { font-size: 0.95em; color: #333; line-height: 1.2; }
+
+/* --- Contenedores Principales (ajustados) --- */
+/* Centrar los contenedores principales en la columna central de la cuadrícula */
+#login-container, #resultados-container { max-width: 620px; width: 100%; margin-top: 30px; padding: 18px; background: #fff; border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); text-align: center; }
+#login-container { grid-column: 2 / 3; justify-self: center; }
+#resultados-container { grid-column: 2 / 3; justify-self: center; text-align: left; }
 
 /* --- Estilos del Formulario --- */
-#patenteInput {
-    width: 80%;
-    padding: 15px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 15px;
-}
+#patenteInput { width: 80%; padding: 12px; border: 2px solid #ccc; border-radius: 8px; font-size: 1.2em; text-align: center; margin-bottom: 12px; }
 
-button {
-    background-color: #ff9900; 
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
-    width: 80%;
-    transition: background-color 0.3s;
-}
+button { background-color: #ff9900; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1.05em; font-weight: bold; transition: background-color 0.3s; }
+button:hover { background-color: #cc7a00; }
 
-button:hover {
-    background-color: #cc7a00;
-}
-
-.error-message {
-    color: #cc0000;
-    font-weight: bold;
-    margin-top: 15px;
-    font-size: 1.1em;
-}
+.error-message { color: #cc0000; font-weight: bold; margin-top: 12px; font-size: 1.0em; }
 
 /* --- Estilos de la Tarjeta de Información Estática --- */
-.info-card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-}
+.info-card { border: 1px solid #ddd; border-radius: 5px; padding: 12px; margin-bottom: 14px; background-color: #f9f9f9; }
 
 /* =======================================
    ESTILOS DE LA TABLA DE HISTORIAL
    ======================================= */
-.historial-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    font-size: 0.9em;
-}
+.historial-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.9em; }
+.historial-table th, .historial-table td { padding: 10px 8px; border: 1px solid #eee; text-align: left; }
+.historial-table thead th { background-color: #004d99; color: white; font-weight: bold; }
+.historial-table tbody tr:first-child { background-color: #e6f7ff; font-weight: bold; }
+.proximo-service { background-color: #fff0f0 !important; font-weight: bold; color: #CC0000; }
 
-.historial-table th, .historial-table td {
-    padding: 12px 10px;
-    border: 1px solid #eee;
-    text-align: left;
-}
-
-.historial-table thead th {
-    background-color: #004d99;
-    color: white;
-    font-weight: bold;
-}
-
-/* Fila para resaltar el servicio más reciente */
-.historial-table tbody tr:first-child {
-    background-color: #e6f7ff; 
-    font-weight: bold;
-}
-
-/* Resaltado para alertas (Próximo Service) */
-.proximo-service {
-    background-color: #fff0f0 !important; 
-    font-weight: bold;
-    color: #CC0000;
-}
-
-/* Estilo del botón de 'Nueva Consulta' */
-#resultados-container button {
-    width: auto;
-    margin-top: 20px;
-    background-color: #6c757d;
-    padding: 10px 20px;
-}
+/* Pequeños ajustes en móviles */
+@media (max-width: 999px) { #login-container, #resultados-container { margin-top: 16px; padding: 14px; } }

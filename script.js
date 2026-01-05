@@ -97,3 +97,73 @@ function mostrarResultados(patente, datosEstaticos, historial) {
     document.getElementById('login-container').style.display = 'none';
     document.getElementById('resultados-container').style.display = 'block';
 }
+
+/* -------------------------------------------------
+   Generar galerías laterales a partir de archivos
+   definidos en `ASSETS_FILES`. Distribuye las
+   tarjetas alternando entre la columna izquierda
+   y la derecha. Mantiene el mismo texto (caption)
+   para cada imagen.
+   ------------------------------------------------- */
+(function createSideGallery(){
+    const ASSETS_FILES = [
+        'autopartes Cabot.jpg',
+        'autopartes Coco.jpg',
+        'autopartes Dos Ramos.jpg',
+        'autopartes Ebes.jpg',
+        'autopartes Gran Prix.png',
+        'frenos NP.jpg',
+        'resp 2000.jpg',
+        'resp Alvear.jpg',
+        'resp Avenida.jpg',
+        'resp Cacho.jpg',
+        'resp Cerra.jpg',
+        'resp Chuletas.png',
+        'resp Coqui.jpg',
+        'resp Del Sur.jpg',
+        'resp electr Lef.jpg',
+        'resp Trelew.jpg',
+        'resp Vento.jpg',
+        'resp Zonales.jpg'
+    ];
+
+    const bottomDiv = document.createElement('div');
+    bottomDiv.id = 'bottom-gallery';
+
+    ASSETS_FILES.forEach((name, idx) => {
+        const heroCard = document.createElement('div');
+        heroCard.className = 'hero-card';
+
+        const heroInner = document.createElement('div');
+        heroInner.className = 'hero';
+
+        const img = document.createElement('img');
+        img.id = 'hero-img-' + idx;
+        img.src = 'assets/' + encodeURIComponent(name);
+        img.alt = name;
+        img.style.maxWidth = '100%';
+
+        const caption = document.createElement('div');
+        caption.className = 'hero-caption';
+        caption.innerHTML = `
+            <div class="caption-title">Repuestos Vento</div>
+            <div class="caption-address">Calle falsa 123</div>
+            <div class="caption-phone">Tel 2804018002</div>
+        `;
+
+        heroInner.appendChild(img);
+        heroInner.appendChild(caption);
+        heroCard.appendChild(heroInner);
+
+        // Añadir todas las tarjetas al contenedor inferior (mosaico)
+        bottomDiv.appendChild(heroCard);
+    });
+    // Insertar la galería inferior dentro de la cuadrícula principal
+    const layout = document.querySelector('.layout-grid');
+    if (layout) {
+        layout.appendChild(bottomDiv);
+    } else {
+        // fallback: añadir al body
+        document.body.appendChild(bottomDiv);
+    }
+})();

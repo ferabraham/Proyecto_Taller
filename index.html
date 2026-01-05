@@ -9,9 +9,10 @@
 </head>
 <body>
     
+    <div class="layout-grid">
     <div id="login-container">
-        <h1>🛠️ Consulta de Historial</h1>
-        <p>Por favor, ingrese el dominio (patente) de su vehículo:</p>
+        <h1>🛠️ Consulta de Historial Vehicular</h1>
+        <p>Por favor, ingrese el dominio (patente) de su vehículo sin espacios</p>
         
         <form id="patenteForm">
             <input 
@@ -28,7 +29,7 @@
         <p id="mensaje-error" class="error-message"></p>
     </div>
 
-    
+
     <div id="resultados-container" style="display: none;">
         
         <h2>Historial de Servicios para Patente: <span id="patente-mostrada"></span></h2>
@@ -41,6 +42,7 @@
         <hr>
 
         <button onclick="window.location.reload();">Nueva Consulta</button>
+    </div>
     </div>
 
     <script src="script.js"></script>
