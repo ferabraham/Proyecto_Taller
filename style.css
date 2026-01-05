@@ -10,6 +10,9 @@ body {
     box-sizing: border-box;
 }
 
+/* Evitar scroll horizontal en móviles */
+html, body { overflow-x: hidden; }
+
 /* Asegurar que las imágenes no excedan el ancho del contenedor en móviles */
 img { max-width: 100%; height: auto; display: block; }
 
@@ -48,7 +51,6 @@ h1 {
 .side.right { grid-column: 3 / 4; }
 .side .hero-card { display: block; width: 320px; margin: 0; }
 .side .hero-card .hero img { height: 320px; object-fit: cover; }
-}
 
 /* Ajustes de espacio para evitar solapamiento con las barras laterales */
 @media (min-width: 1000px) {
