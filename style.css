@@ -25,10 +25,10 @@ h1 {
 /* Layout de página: columnas laterales y contenido central */
 .layout-grid {
     display: grid;
-    grid-template-columns: 200px 1200px 200px;
+    grid-template-columns: 1fr minmax(320px, 1000px) 1fr; /* columnas fluidas: lados flex, centro limitado */
     gap: 18px;
     align-items: start;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -49,23 +49,21 @@ h1 {
 }
 .side.left { grid-column: 1 / 2; }
 .side.right { grid-column: 3 / 4; }
-.side .hero-card { display: block; width: 320px; margin: 0; }
-.side .hero-card .hero img { height: 320px; object-fit: cover; }
+.side .hero-card { display: block; width: 100%; max-width: 320px; margin: 0; }
+.side .hero-card .hero img { width: 100%; height: auto; object-fit: cover; }
 
 /* Ajustes de espacio para evitar solapamiento con las barras laterales */
 @media (min-width: 1000px) {
-    body {
-        padding-left: 260px;
-        padding-right: 260px;
-    }
+    /* No añadir padding lateral grande que fuerce zoom; usar grid */
+    body { padding-left: 20px; padding-right: 20px; }
 }
 /* Layout de página: columnas laterales y contenido central */
 .layout-grid {
     display: grid;
-    grid-template-columns: 200px 1200px 200px;
+    grid-template-columns: 1fr minmax(320px, 1000px) 1fr; /* columnas fluidas: lados flex, centro limitado */
     gap: 18px;
     align-items: start;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -80,7 +78,7 @@ h1 {
 #bottom-gallery {
     grid-column: 2 / 3; /* ahora solo en columna central */
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* menos columnas para miniaturas más anchas */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* columnas responsivas */
     gap: 18px;
     align-items: start;
     overflow: visible; /* sin carrusel */
@@ -94,21 +92,20 @@ h1 {
 }
 
 #bottom-gallery .hero-card { width: 100%; padding: 8px; margin: 0; }
-#bottom-gallery .hero-card img { width: 100%; height: 420px; object-fit: cover; border-radius: 6px; }
+#bottom-gallery .hero-card img { width: 100%; height: auto; aspect-ratio: 16/10; object-fit: cover; border-radius: 6px; }
 
 /* En pantallas pequeñas, la galería inferior pasa a flujo normal debajo del contenido */
 @media (max-width: 999px) {
-    #bottom-gallery { position: static; width: 100%; height: auto; display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 6px; margin-top: 18px; }
-    /* Cada tarjeta ocupa ~50% del ancho en móvil para miniaturas más anchas */
-    #bottom-gallery .hero-card { flex: 1 1 calc(50% - 12px); box-sizing: border-box; }
-    /* Imágenes responsivas en móvil: altura automática y límite razonable */
-    #bottom-gallery .hero-card img { width: 100%; height: auto; max-height: 240px; object-fit: cover; border-radius: 6px; }
+    /* En móvil usar una sola columna en el mosaico para evitar zoom */
+    #bottom-gallery { position: static; width: 100%; height: auto; display: grid; grid-template-columns: 1fr; gap: 12px; padding: 12px 8px; margin-top: 18px; }
+    #bottom-gallery .hero-card { width: 100%; padding: 6px 0; box-sizing: border-box; }
+    #bottom-gallery .hero-card img { width: 100%; height: auto; max-height: 320px; object-fit: cover; border-radius: 6px; }
     /* Asegurar que el contenido central ocupe el ancho disponible con margenes */
-    #login-container, #resultados-container { max-width: 94%; margin-left: auto; margin-right: auto; }
+    #login-container, #resultados-container { max-width: 96%; margin-left: auto; margin-right: auto; }
 }
 
 /* --- Hero / imagen --- */
-.hero img { max-width: 220px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+.hero img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
 
 /* --- Caption debajo de la imagen --- */
 .hero-caption {
