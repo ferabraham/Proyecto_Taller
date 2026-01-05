@@ -9,7 +9,48 @@
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=904775062#gid=904775062"
     },
     {
-      "DOMINIO": "PRUEBAGuardado"
+      "DOMINIO": "AAA124",
+      "PROPIETARIO": "Fer",
+      "MARCA_MODELO": "gol",
+      "MOTOR": "ap",
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1695663237#gid=1695663237"
+    },
+    {
+      "DOMINIO": "ABC123",
+      "PROPIETARIO": "more",
+      "MARCA_MODELO": "corsa",
+      "MOTOR": "cdc",
+      "CILINDRADA": "1",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=461985044#gid=461985044"
+    },
+    {
+      "DOMINIO": "NOO189",
+      "PROPIETARIO": "Mario",
+      "MARCA_MODELO": "citroen",
+      "MOTOR": "grande",
+      "CILINDRADA": "2",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1449702781#gid=1449702781"
+    },
+    {
+      "DOMINIO": "AC358SH",
+      "PROPIETARIO": "Gabriel Garcia",
+      "MARCA_MODELO": "Chevrolet Spin",
+      "MOTOR": "Corsa 2",
+      "CILINDRADA": "1,8 8v"
+    }
+  ],
+  "AAA124": [
+    {
+      "FECHA_INGRESO": "2025-10-01T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-10-02T03:00:00.000Z",
+      "KILOMETRAJE": "123456",
+      "PROBLEMAS": "muchos",
+      "DIAGNOSTICO": "nada",
+      "URL_FOTOS": "N/D",
+      "REPUESTOS_REEMPLAZADOS": "no",
+      "PROXIMO_SERVICE": "no",
+      "OBSERVACIONES": "no"
     }
   ],
   "AAA123": [
@@ -23,6 +64,55 @@
       "REPUESTOS_REEMPLAZADOS": "aceite 15w40 castrol, filtro aceite y filtro nafta",
       "PROXIMO_SERVICE": "110000",
       "OBSERVACIONES": "Se recomienda cambio de cubiertas"
+    }
+  ],
+  "ABC123": [
+    {
+      "FECHA_INGRESO": "2025-02-11T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-02-12T03:00:00.000Z",
+      "KILOMETRAJE": "120",
+      "PROBLEMAS": "nada",
+      "DIAGNOSTICO": "muchos",
+      "URL_FOTOS": "N/D",
+      "REPUESTOS_REEMPLAZADOS": "todos",
+      "PROXIMO_SERVICE": "nunca",
+      "OBSERVACIONES": "nada"
+    }
+  ],
+  "NOO189": [
+    {
+      "FECHA_INGRESO": "2025-02-11T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-02-12T03:00:00.000Z",
+      "KILOMETRAJE": "120",
+      "PROBLEMAS": "nada",
+      "DIAGNOSTICO": "muchos",
+      "URL_FOTOS": "N/D",
+      "REPUESTOS_REEMPLAZADOS": "bombda de agua y aceite",
+      "PROXIMO_SERVICE": "nunca",
+      "OBSERVACIONES": "lo vamos a VENDER!!!"
+    },
+    {
+      "FECHA_INGRESO": "2025-02-15T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-03-15T03:00:00.000Z",
+      "KILOMETRAJE": "130",
+      "PROBLEMAS": "asda",
+      "DIAGNOSTICO": "sdas",
+      "URL_FOTOS": "asdas",
+      "REPUESTOS_REEMPLAZADOS": "sadas",
+      "PROXIMO_SERVICE": "asdas",
+      "OBSERVACIONES": "asdas"
+    }
+  ],
+  "AC358SH": [
+    {
+      "FECHA_INGRESO": "2026-01-02T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-01-02T03:00:00.000Z",
+      "KILOMETRAJE": "182244",
+      "PROBLEMAS": "Service de Distribucion",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Distribucion completa, correa dentada, tensor, bomba de agua, termostato, agua y refrigerante",
+      "PROXIMO_SERVICE": "132,000 aproximadamente"
     }
   ]
 }
