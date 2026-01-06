@@ -150,5 +150,29 @@ button:hover { background-color: #cc7a00; }
 .historial-table tbody tr:first-child { background-color: #e6f7ff; font-weight: bold; }
 .proximo-service { background-color: #fff0f0 !important; font-weight: bold; color: #CC0000; }
 
+/* Contenedor responsivo para evitar que la tabla se salga de la página
+   Añadimos scroll horizontal dentro del contenedor en pantallas pequeñas
+*/
+#historial-tabla {
+    width: 100%;
+    overflow-x: auto; /* permite scroll horizontal dentro del contenedor */
+    -webkit-overflow-scrolling: touch; /* suaviza el scroll en móviles */
+    box-sizing: border-box;
+}
+
+/* Mejora del comportamiento de celdas largas */
+.historial-table { table-layout: auto; min-width: 600px; }
+.historial-table th, .historial-table td {
+    word-break: break-word; /* rompe palabras largas */
+    white-space: normal;    /* permite wrap dentro de celdas */
+    overflow-wrap: anywhere;
+    max-width: 320px;
+}
+
+/* En pantallas muy pequeñas reducir fuente y asegurar espacio */
+@media (max-width: 520px) {
+    .historial-table { font-size: 0.78em; min-width: 520px; }
+}
+
 /* Pequeños ajustes en móviles */
 @media (max-width: 999px) { #login-container, #resultados-container { margin-top: 16px; padding: 14px; } }
