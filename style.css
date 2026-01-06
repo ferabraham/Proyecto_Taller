@@ -3,8 +3,8 @@
    ======================================= */
 html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eaf2ff; /* fallback */
-    background: linear-gradient(135deg, #e6f0ff 0%, #f7fbff 50%, #eaf7f0 100%);
+    background-color: #001f3f; /* azul marino */
+    background: linear-gradient(180deg, #001f3f 0%, #003153 100%);
     background-attachment: fixed;
     margin: 0;
     padding: 0; /* eliminado padding global para evitar borde lateral desigual */
@@ -122,8 +122,8 @@ h1 {
 }
 
 /* Estilo para el subtítulo debajo del cuadro de consulta */
-.subtitle-card { grid-column: 2 / 3; max-width: 620px; margin: 12px auto; text-align: center; color: #003366; }
-.subtitle-card h3 { margin: 6px 0; font-size: 1.05em; font-weight: 800; }
+.subtitle-card { grid-column: 2 / 3; max-width: 620px; margin: 12px auto; text-align: center; }
+.subtitle-card h3 { margin: 6px 0; font-size: 1.05em; font-weight: 800; color: #e6f4ff; }
 
 /* --- Hero / imagen --- */
 .hero img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
@@ -132,8 +132,8 @@ h1 {
 .hero-caption {
     margin-top: 12px;
     text-align: center;
-    color: #0b2b4a;
-    background-color: rgba(0, 77, 153, 0.08);
+    color: #e6f4ff;
+    background-color: rgba(255,255,255,0.04);
     padding: 10px 14px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.03);
@@ -142,8 +142,8 @@ h1 {
     display: block;
     margin-left: 0;
 }
-.hero-caption .caption-title { font-weight: 800; font-size: 1.05em; color: #003366; margin-bottom: 4px; }
-.hero-caption .caption-address, .hero-caption .caption-phone { font-size: 0.95em; color: #333; line-height: 1.2; }
+.hero-caption .caption-title { font-weight: 800; font-size: 1.05em; color: #e6f4ff; margin-bottom: 4px; }
+.hero-caption .caption-address, .hero-caption .caption-phone { font-size: 0.95em; color: #dbeeff; line-height: 1.2; }
 
 /* --- Contenedores Principales (ajustados) --- */
 /* Centrar los contenedores principales en la columna central de la cuadrícula */
@@ -160,7 +160,7 @@ button:hover { background-color: #cc7a00; }
 .error-message { color: #cc0000; font-weight: bold; margin-top: 12px; font-size: 1.0em; }
 
 /* --- Estilos de la Tarjeta de Información Estática --- */
-.info-card { border: 1px solid #ddd; border-radius: 5px; padding: 12px; margin-bottom: 14px; background-color: #f9f9f9; }
+.info-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 5px; padding: 12px; margin-bottom: 14px; background-color: rgba(255,255,255,0.96); }
 
 /* =======================================
    ESTILOS DE LA TABLA DE HISTORIAL
