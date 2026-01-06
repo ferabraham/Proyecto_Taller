@@ -74,7 +74,16 @@ h1 {
 @media (max-width: 999px) {
     .side { display: none; }
     #sides-gallery { display: none; }
-    body { padding-left: 20px; padding-right: 20px; }
+    body { padding-left: 0; padding-right: 0; }
+}
+
+/* Ajustes adicionales en pantallas muy pequeñas para centrar y acercar a la izquierda */
+@media (max-width: 520px) {
+    .layout-grid { padding-left: 8px; padding-right: 8px; }
+    /* asegurar que el grid no añada offsets inesperados */
+    .layout-grid { margin-left: 0; margin-right: 0; }
+    /* contenedores ocupen todo el ancho disponible */
+    #login-container, #resultados-container, .subtitle-card { max-width: 100%; padding-left: 10px; padding-right: 10px; }
 }
 
 /* Evitar que elementos con grid-column fijen columnas fuera del viewport en móvil */
