@@ -77,6 +77,20 @@ h1 {
     body { padding-left: 20px; padding-right: 20px; }
 }
 
+/* Evitar que elementos con grid-column fijen columnas fuera del viewport en móvil */
+@media (max-width: 999px) {
+    .subtitle-card,
+    #login-container,
+    #resultados-container,
+    #bottom-gallery {
+        grid-column: 1 / -1 !important;
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 /* --- Galería inferior (en flujo, debajo de la cuadrícula) --- */
 #bottom-gallery {
     grid-column: 2 / 3; /* ahora solo en columna central */
