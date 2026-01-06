@@ -37,7 +37,16 @@
       "PROPIETARIO": "Gabriel Garcia",
       "MARCA_MODELO": "Chevrolet Spin",
       "MOTOR": "Corsa 2",
-      "CILINDRADA": "1,8 8v"
+      "CILINDRADA": "1,8 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1231491464#gid=1231491464"
+    },
+    {
+      "DOMINIO": "JOS087",
+      "PROPIETARIO": "Santander Gustavo",
+      "MARCA_MODELO": "Ford Ecosport",
+      "MOTOR": "Zetec Rocam",
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1017109181#gid=1017109181"
     }
   ],
   "AAA124": [
@@ -113,6 +122,19 @@
       "URL_FOTOS": "-",
       "REPUESTOS_REEMPLAZADOS": "Distribucion completa, correa dentada, tensor, bomba de agua, termostato, agua y refrigerante",
       "PROXIMO_SERVICE": "132,000 aproximadamente"
+    }
+  ],
+  "JOS087": [
+    {
+      "FECHA_INGRESO": "2026-01-03T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-01-03T03:00:00.000Z",
+      "KILOMETRAJE": "418190",
+      "PROBLEMAS": "Service",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Aceite 15w40 Fercol, Filtro de aceite, filtro de aire, filtro de nafta, tapon de carter",
+      "PROXIMO_SERVICE": "428000",
+      "OBSERVACIONES": "Se recomienda reacondicionar soporte motor, limpieza de motor"
     }
   ]
 }
