@@ -1,11 +1,13 @@
 /* =======================================
    ESTILOS GENERALES Y LAYOUT (limpio)
    ======================================= */
-body {
+html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #eaf2ff; /* fallback */
+    background: linear-gradient(135deg, #e6f0ff 0%, #f7fbff 50%, #eaf7f0 100%);
+    background-attachment: fixed;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* eliminado padding global para evitar borde lateral desigual */
     min-height: 100vh;
     box-sizing: border-box;
 }
@@ -30,6 +32,7 @@ h1 {
     align-items: start;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 20px; /* padding movido desde body aquí para controlar espacio lateral */
 }
 
 /* En pantallas pequeñas usar solo una columna */
@@ -54,8 +57,8 @@ h1 {
 
 /* Ajustes de espacio para evitar solapamiento con las barras laterales */
 @media (min-width: 1000px) {
-    /* No añadir padding lateral grande que fuerce zoom; usar grid */
-    body { padding-left: 20px; padding-right: 20px; }
+    /* Mantener padding del layout en pantallas grandes */
+    .layout-grid { padding-left: 20px; padding-right: 20px; }
 }
 /* Layout de página: columnas laterales y contenido central */
 .layout-grid {
@@ -104,6 +107,10 @@ h1 {
     #login-container, #resultados-container { max-width: 96%; margin-left: auto; margin-right: auto; }
 }
 
+/* Estilo para el subtítulo debajo del cuadro de consulta */
+.subtitle-card { grid-column: 2 / 3; max-width: 620px; margin: 12px auto; text-align: center; color: #003366; }
+.subtitle-card h3 { margin: 6px 0; font-size: 1.05em; font-weight: 800; }
+
 /* --- Hero / imagen --- */
 .hero img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
 
@@ -126,7 +133,7 @@ h1 {
 
 /* --- Contenedores Principales (ajustados) --- */
 /* Centrar los contenedores principales en la columna central de la cuadrícula */
-#login-container, #resultados-container { max-width: 620px; width: 100%; margin-top: 30px; padding: 18px; background: #fff; border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); text-align: center; }
+#login-container, #resultados-container { max-width: 620px; width: 100%; margin-top: 30px; padding: 18px; background: rgba(255,255,255,0.92); border-radius: 10px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06); text-align: center; }
 #login-container { grid-column: 2 / 3; justify-self: center; }
 #resultados-container { grid-column: 2 / 3; justify-self: center; text-align: left; }
 
