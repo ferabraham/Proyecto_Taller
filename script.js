@@ -107,24 +107,24 @@ function mostrarResultados(patente, datosEstaticos, historial) {
    ------------------------------------------------- */
 (function createSideGallery(){
     const ASSETS = [
-        { file: 'autopartes Cabot.jpg', captionTitle: 'Autopartes Cabot', captionAddress: 'Calle Falsa 1', captionPhone: 'Tel 111-111', href: 'https://www.google.com' },
-        { file: 'autopartes Coco.jpg', captionTitle: 'Autopartes Coco', captionAddress: 'Calle Falsa 2', captionPhone: 'Tel 222-222', href: 'https://www.google.com' },
-        { file: 'autopartes Dos Ramos.jpg', captionTitle: 'Autopartes Dos Ramos', captionAddress: 'Calle Falsa 3', captionPhone: 'Tel 333-333', href: 'https://www.google.com' },
-        { file: 'autopartes Ebes.jpg', captionTitle: 'Autopartes Ebes', captionAddress: 'Calle Falsa 4', captionPhone: 'Tel 444-444', href: 'https://www.google.com' },
-        { file: 'autopartes Gran Prix.png', captionTitle: 'Autopartes Gran Prix', captionAddress: 'Av. Principal 5', captionPhone: 'Tel 555-555', href: 'https://www.google.com' },
-        { file: 'frenos NP.jpg', captionTitle: 'Frenos NP', captionAddress: 'Av. Frenos 6', captionPhone: 'Tel 666-666', href: 'https://www.google.com' },
-        { file: 'resp 2000.jpg', captionTitle: 'Resp 2000', captionAddress: 'Ruta 7', captionPhone: 'Tel 777-777', href: 'https://www.google.com' },
-        { file: 'resp Alvear.jpg', captionTitle: 'Resp Alvear', captionAddress: 'Calle Alvear 10', captionPhone: 'Tel 888-888', href: 'https://www.google.com' },
-        { file: 'resp Avenida.jpg', captionTitle: 'Resp Avenida', captionAddress: 'Av. Central 12', captionPhone: 'Tel 999-999', href: 'https://www.google.com' },
-        { file: 'resp Cacho.jpg', captionTitle: 'Resp Cacho', captionAddress: 'Cacho 45', captionPhone: 'Tel 101-101', href: 'https://www.google.com' },
-        { file: 'resp Cerra.jpg', captionTitle: 'Resp Cerra', captionAddress: 'Cerra 22', captionPhone: 'Tel 202-202', href: 'https://www.google.com' },
-        { file: 'resp Chuletas.png', captionTitle: 'Resp Chuletas', captionAddress: 'Chuletas 7', captionPhone: 'Tel 303-303', href: 'https://www.google.com' },
-        { file: 'resp Coqui.jpg', captionTitle: 'Resp Coqui', captionAddress: 'Coqui 9', captionPhone: 'Tel 404-404', href: 'https://www.google.com' },
-        { file: 'resp Del Sur.jpg', captionTitle: 'Resp Del Sur', captionAddress: 'Del Sur 11', captionPhone: 'Tel 505-505', href: 'https://www.google.com' },
-        { file: 'resp electr Lef.jpg', captionTitle: 'Resp Elect. Lef', captionAddress: 'Electr Lef 13', captionPhone: 'Tel 606-606', href: 'https://www.google.com' },
+        { file: 'autopartes Cabot.jpg', captionTitle: 'Autopartes Cabot', captionAddress: 'Cabot y Zapiola', captionPhone: 'Tel 280-4398995', href: 'https://share.google/6AhLFNqLBtJZM6PWO' },
+        { file: 'autopartes Coco.jpg', captionTitle: 'Autopartes Coco', captionAddress: 'Lopez y Planes y Condarco', captionPhone: 'Tel 280-4597437', href: 'https://share.google/k23viCc48pXrrAPav' },
+        { file: 'autopartes Dos Ramos.jpg', captionTitle: 'Autopartes Dos Ramos', captionAddress: 'San Martin entre Entre Rios y Cuba', captionPhone: 'Tel 280-4323892', href: 'https://share.google/v57iSqbfMqK3M2VnV' },
+        { file: 'autopartes Ebes.jpg', captionTitle: 'Autopartes Ebes', captionAddress: 'España y Moreno', captionPhone: 'Tel 280-4427700', href: 'https://share.google/u5DhJChEdony9mrpo' },
+        { file: 'autopartes Gran Prix.png', captionTitle: 'Autopartes Gran Prix', captionAddress: 'Don Bosco y Moreno', captionPhone: 'Tel 280-4193677', href: 'https://share.google/2D1pHPVhF1SOjBCwX' },
+        { file: 'frenos NP.jpg', captionTitle: 'Frenos NP', captionAddress: 'Rosales y Alem', captionPhone: 'Tel 280-4620577', href: 'https://share.google/SW4wzDMvrFgCgAnGH' },
+        { file: 'resp 2000.jpg', captionTitle: 'Respuestos 2000', captionAddress: 'Gales y Ameghino', captionPhone: 'Tel 280-4620669', href: 'https://share.google/fNDwmpYex27wKuG50' },
+        { file: 'resp Alvear.jpg', captionTitle: 'Respuestos Alvear', captionAddress: '25 de Mayo entre Uruguay y Bs As', captionPhone: 'Tel 280-4705826', href: 'https://share.google/POTbJXzQ6kdVskUYI' },
+        { file: 'resp Avenida.jpg', captionTitle: 'Resp Avenida', captionAddress: 'Avenida Yrigoyen y Cabot', captionPhone: 'Tel 280-4023599', href: 'https://share.google/zitvkldTyKiI4d5ze' },
+        { file: 'resp Cacho.jpg', captionTitle: 'Respuestos Cacho', captionAddress: 'Gales y Ameghino', captionPhone: 'Tel 280-4422756', href: 'https://share.google/f4tU9OwAttqDfck22' },
+        { file: 'resp Cerra.jpg', captionTitle: 'Respuestos Cerra', captionAddress: 'Cruz del Sur y Ramon y Cajal', captionPhone: 'Tel 280-4421883', href: 'https://share.google/vZAWG15qKRCANAQWZ' },
+        { file: 'resp Chuletas.png', captionTitle: 'Respuestos Chuletas', captionAddress: 'Cuba entre Venezuela y J.A.Roca', captionPhone: 'Tel 280-5092242', href: 'https://share.google/Dct6xjKwxYvSNQCQV' },
+        { file: 'resp Coqui.jpg', captionTitle: 'Respuesto Coqui', captionAddress: 'Avenida Allende y Laprida', captionPhone: 'Tel 280-4008038', href: 'https://share.google/1euVNA53U0URuPfb1' },
+        { file: 'resp Del Sur.jpg', captionTitle: 'Respuestos Del Sur', captionAddress: 'Galina y Lloyd Jones', captionPhone: 'Tel 280-5022812', href: 'https://share.google/mHm0eZkwm4OKk9439' },
+        { file: 'resp electr Lef.jpg', captionTitle: 'Electricidad Lef', captionAddress: 'Marconi y J.A.Roca', captionPhone: 'Tel 280-4426777', href: 'https://share.google/gqGKEZPOPy0Cn9lYB' },
         { file: 'resp Trelew.jpg', captionTitle: 'Respuestos Trelew', captionAddress: '25 de Mayo y Cuba', captionPhone: 'Tel 280-4602439', href: 'https://share.google/JzBGKJIgjCcZ3XBJm' },
-        { file: 'resp Vento.jpg', captionTitle: 'Resp Vento', captionAddress: 'Vento 18', captionPhone: 'Tel 808-808', href: 'https://www.google.com' },
-        { file: 'resp Zonales.jpg', captionTitle: 'Resp Zonales', captionAddress: 'Zonales 20', captionPhone: 'Tel 909-909', href: 'https://www.google.com' }
+        { file: 'resp Vento.jpg', captionTitle: 'Respuestos Vento', captionAddress: '25 de Mayo entre Edison y Marconi', captionPhone: 'Tel 280-4370292', href: 'https://share.google/og6j99BiVWFVnf8G2' },
+        { file: 'resp Zonales.jpg', captionTitle: 'Respuestos Zonales', captionAddress: 'Soberania Nacional y Edison', captionPhone: 'Tel 280-4717338', href: 'https://share.google/BRdrVB80tSygSQqkh' }
     ];
 
     const bottomDiv = document.createElement('div');
