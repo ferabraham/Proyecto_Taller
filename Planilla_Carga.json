@@ -53,7 +53,16 @@
       "PROPIETARIO": "Crespo Marcos",
       "MARCA_MODELO": "Ford Focus",
       "MOTOR": "Zetec Rocam",
-      "CILINDRADA": "1,6 8v"
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1910693944#gid=1910693944"
+    },
+    {
+      "DOMINIO": "LBQ345",
+      "PROPIETARIO": "Narambuena Rolando",
+      "MARCA_MODELO": "VW Fox",
+      "MOTOR": "EA111",
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1698604604#gid=1698604604"
     }
   ],
   "AAA124": [
@@ -154,6 +163,19 @@
       "REPUESTOS_REEMPLAZADOS": "Taco de motor, se reemplazo tren delantero completo con amortiguadores",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "-"
+    }
+  ],
+  "LBQ345": [
+    {
+      "FECHA_INGRESO": "2026-01-08T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-01-08T03:00:00.000Z",
+      "KILOMETRAJE": "209249",
+      "PROBLEMAS": "Service y Perdida de agua",
+      "DIAGNOSTICO": "perdida de agua por cuerpo de termostato y ca?o de la bombda de agua",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Aceite 15w40 Extrima, filtro de aceite, filtro de nafta y aire, se cambiaron los orrings del ca?o de vomva de agua y se reemplazo liquido refrigerante",
+      "PROXIMO_SERVICE": "219000",
+      "OBSERVACIONES": "Se recomienda cambio de bujes de selectora palanca de cambios"
     }
   ]
 }
