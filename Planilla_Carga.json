@@ -63,6 +63,14 @@
       "MOTOR": "EA111",
       "CILINDRADA": "1,6 8v",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1698604604#gid=1698604604"
+    },
+    {
+      "DOMINIO": "FLK698",
+      "PROPIETARIO": "Farias Katy",
+      "MARCA_MODELO": "Chevrolet Corsa",
+      "MOTOR": "Clasic",
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=416200923#gid=416200923"
     }
   ],
   "AAA124": [
@@ -176,6 +184,19 @@
       "REPUESTOS_REEMPLAZADOS": "Aceite 15w40 Extrima, filtro de aceite, filtro de nafta y aire, se cambiaron los orrings del ca?o de bomba de agua y se reemplazo liquido refrigerante",
       "PROXIMO_SERVICE": "219000",
       "OBSERVACIONES": "Se recomienda cambio de bujes de selectora palanca de cambios"
+    }
+  ],
+  "FLK698": [
+    {
+      "FECHA_INGRESO": "2026-02-02T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-02-03T03:00:00.000Z",
+      "KILOMETRAJE": "248185",
+      "PROBLEMAS": "Homocinetica rota lado derecho",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Kit Homocinetica completo, Carga de bateria y chequeo general de liquidos de motor",
+      "PROXIMO_SERVICE": "-",
+      "OBSERVACIONES": "Se recomienda cambio de bujes de tren delantero"
     }
   ]
 }
