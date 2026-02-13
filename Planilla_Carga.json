@@ -71,6 +71,14 @@
       "MOTOR": "Clasic",
       "CILINDRADA": "1,6 8v",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=416200923#gid=416200923"
+    },
+    {
+      "DOMINIO": "AF 418 VF",
+      "PROPIETARIO": "Mansilla Marcelo",
+      "MARCA_MODELO": "Renault Stepway",
+      "MOTOR": "H4M",
+      "CILINDRADA": "1,6 16v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1622675991#gid=1622675991"
     }
   ],
   "AAA124": [
@@ -197,6 +205,19 @@
       "REPUESTOS_REEMPLAZADOS": "Kit Homocinetica completo, Carga de bateria y chequeo general de liquidos de motor",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "Se recomienda cambio de bujes de tren delantero"
+    }
+  ],
+  "AF 418 VF": [
+    {
+      "FECHA_INGRESO": "2025-02-12T03:00:00.000Z",
+      "FECHA_RETIRO": "2025-02-13T03:00:00.000Z",
+      "KILOMETRAJE": "67200",
+      "PROBLEMAS": "Service",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Quartz Aceite 10w40, Filtro de aceite, filtro de aire y Nafta, pastillas de freno",
+      "PROXIMO_SERVICE": "77000",
+      "OBSERVACIONES": "-"
     }
   ]
 }
