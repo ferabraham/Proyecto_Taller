@@ -79,6 +79,14 @@
       "MOTOR": "H4M",
       "CILINDRADA": "1,6 16v",
       "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1622675991#gid=1622675991"
+    },
+    {
+      "DOMINIO": "EMA 869",
+      "PROPIETARIO": "Lagos Enzo",
+      "MARCA_MODELO": "Ford Fiesta",
+      "MOTOR": "Zetec Rocam",
+      "CILINDRADA": "1,6 8v",
+      "RUTA_HOJA": "https://docs.google.com/spreadsheets/d/1L3q2R29Ehgmn90uMLwrlc5SfQ3egKBKBO2NNa9m9xdI/edit?gid=1142910994#gid=1142910994"
     }
   ],
   "AAA124": [
@@ -217,6 +225,17 @@
       "URL_FOTOS": "-",
       "REPUESTOS_REEMPLAZADOS": "Quartz Aceite 10w40, Filtro de aceite, filtro de aire y Nafta, pastillas de freno",
       "PROXIMO_SERVICE": "77000",
+      "OBSERVACIONES": "-"
+    }
+  ],
+  "EMA 869": [
+    {
+      "FECHA_INGRESO": "2026-03-07T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-03-10T03:00:00.000Z",
+      "KILOMETRAJE": "261680",
+      "PROBLEMAS": "No entran los cambios, diferentes perdidas de aceite",
+      "REPUESTOS_REEMPLAZADOS": "Kit de embrague con crapodina hidraulica, reten de cajas completos, reten bancada y distribucion de cigue?al, limpieza completa con junta de carter",
+      "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "-"
     }
   ]
