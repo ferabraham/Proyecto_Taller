@@ -162,6 +162,17 @@
       "URL_FOTOS": "-",
       "REPUESTOS_REEMPLAZADOS": "Distribucion completa, correa dentada, tensor, bomba de agua, termostato, agua y refrigerante",
       "PROXIMO_SERVICE": "132,000 aproximadamente"
+    },
+    {
+      "FECHA_INGRESO": "2026-03-25T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-03-25T03:00:00.000Z",
+      "KILOMETRAJE": "-",
+      "PROBLEMAS": "ruidos en el tren delantero",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Se reemplazo bieletas de la barra tensora de ambos lados",
+      "PROXIMO_SERVICE": "-",
+      "OBSERVACIONES": "Se recomienda cambio de pastillas de freno delanteras dentro de los proximos 2 meses"
     }
   ],
   "JOS087": [
