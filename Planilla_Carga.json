@@ -173,6 +173,14 @@
       "REPUESTOS_REEMPLAZADOS": "Se reemplazo bieletas de la barra tensora de ambos lados",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "Se recomienda cambio de pastillas de freno delanteras dentro de los proximos 2 meses"
+    },
+    {
+      "FECHA_INGRESO": "2026-04-02T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-04-02T03:00:00.000Z",
+      "PROBLEMAS": "-",
+      "DIAGNOSTICO": "-",
+      "URL_FOTOS": "-",
+      "REPUESTOS_REEMPLAZADOS": "Cambio de pastillas de freno delanteras"
     }
   ],
   "JOS087": [
