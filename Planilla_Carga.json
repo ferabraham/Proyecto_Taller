@@ -238,6 +238,13 @@
       "REPUESTOS_REEMPLAZADOS": "Correa y tensro, bomba de agua",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "-"
+    },
+    {
+      "FECHA_INGRESO": "2026-04-20T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-04-22T03:00:00.000Z",
+      "PROBLEMAS": "perdida de agua en escape, fallo de temperatura",
+      "DIAGNOSTICO": "junta soplada",
+      "REPUESTOS_REEMPLAZADOS": "junta de tapa de cilindros, bulones, portatermostato completo, plano de tapa"
     }
   ],
   "FLK698": [
@@ -275,6 +282,14 @@
       "REPUESTOS_REEMPLAZADOS": "Kit de embrague con crapodina hidraulica, reten de cajas completos, reten bancada y distribucion de cigue?al, limpieza completa con junta de carter",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "-"
+    },
+    {
+      "FECHA_INGRESO": "2026-07-20T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-07-24T03:00:00.000Z",
+      "KILOMETRAJE": "-",
+      "PROBLEMAS": "perdida de agua",
+      "DIAGNOSTICO": "junta de tapa de cilindros soplada hacia afuera",
+      "REPUESTOS_REEMPLAZADOS": "junta de tapa de cilindros, bulones de tapa, plano de tapa"
     }
   ],
   "OQB913": [
@@ -285,6 +300,13 @@
       "PROBLEMAS": "ruidos en tapa de cilindros",
       "REPUESTOS_REEMPLAZADOS": "Limpieza de carter y chupador de aceite, Service completo",
       "OBSERVACIONES": "-"
+    },
+    {
+      "FECHA_INGRESO": "2026-04-10T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-04-10T03:00:00.000Z",
+      "KILOMETRAJE": "-",
+      "PROBLEMAS": "Service completo, limpieza de chupador carter",
+      "REPUESTOS_REEMPLAZADOS": "Aceite 15w40, filtro aceite, filtro aire, filtro nafta, junta de carter"
     }
   ]
 }
