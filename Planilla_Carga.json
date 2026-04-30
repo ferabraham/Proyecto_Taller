@@ -258,6 +258,14 @@
       "REPUESTOS_REEMPLAZADOS": "Kit Homocinetica completo, Carga de bateria y chequeo general de liquidos de motor",
       "PROXIMO_SERVICE": "-",
       "OBSERVACIONES": "Se recomienda cambio de bujes de tren delantero"
+    },
+    {
+      "FECHA_INGRESO": "2026-04-30T03:00:00.000Z",
+      "FECHA_RETIRO": "2026-04-30T03:00:00.000Z",
+      "KILOMETRAJE": "-",
+      "PROBLEMAS": "ruidos tren delantero",
+      "REPUESTOS_REEMPLAZADOS": "bujes y extremos completos del tren delantero, pastillas de freno",
+      "OBSERVACIONES": "prox arreglar ca?o de freno salida de bomba(pinchado), bujes selectora palanca y cables"
     }
   ],
   "AF 418 VF": [
